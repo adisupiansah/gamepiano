@@ -1,4 +1,4 @@
-const chords = ["a", "c", "d", "e", "f"];
+const chords = ["A", "C", "D", "E", "F"];
       const note = document.getElementById("note");
 
       chords.forEach((chord) => {

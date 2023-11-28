@@ -34,6 +34,7 @@ h1 {
       gap: 10px; /* Adjust the spacing between buttons */
       padding: 20px;
       margin-top: -20px;
+      margin-right: 20px;
      
     }
   }
