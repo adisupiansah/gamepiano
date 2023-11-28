@@ -4,70 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="assets/title.jpg">
+    <link rel="stylesheet" href="style.css">
     <title>Piano Tiles</title>
-
-    <style>
-      h1 {
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      #note {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        margin-top: 12px;
-      }
-      button {
-        background-color: #6db9ef;
-        font-size: 20px;
-        border: none;
-        border-radius: 20px;
-        padding: 40px;
-        margin-left: 20px;
-        color: #454545;
-        cursor: pointer;
-        box-shadow: 5px 5px 5px rgb(170, 169, 169);
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 500;
-      }
-      button:hover {
-        background-color: #3081d0;
-        box-shadow: 5px 5px 5px rgb(104, 103, 103);
-        transition: all ease-in .2s;
-      }
-
-      @media screen and (max-width: 500px) {
-        #note {
-          display: grid;
-          grid-template-columns: repeat(auto-fill,minmax(200px, 1fr)); 
-          gap: 10px; /* Adjust the spacing between buttons */
-          padding: 20px;
-          margin-top: -20px;
-         
-        }
-      }
-    </style>
   </head>
   <body>
       <h1>Piano Tiles</h1>
       <div id="note"></div>
 
 
-    <script>
-      const chords = ["a", "c", "d", "e", "f"];
-      const note = document.getElementById("note");
-
-      chords.forEach((chord) => {
-        const tombol = document.createElement("button");
-        tombol.innerText = chord;
-
-        tombol.addEventListener("click", () => {
-          const sound = new Audio(`assets/${chord}.wav`);
-          sound.play();
-        });
-
-        note.appendChild(tombol);
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
